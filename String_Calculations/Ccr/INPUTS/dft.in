@@ -1,0 +1,42 @@
+300K constant temp QMMMMD
+ &cntrl
+  imin=0, 
+  ntb=1,
+  cut=8.0, 
+  ntc=1,
+  ntf=1,
+  tempi=300.0,
+  temp0=300.0,
+  ntt=3,
+  gamma_ln=1.0,
+  ig=XXXXX,         !The seed must be randomly set for each node
+  nstlim=500000, 
+  dt=0.001,         !QM hydrogens' masses were set to 2.014 to use 1fs of timestep
+  iwrap=1, 
+  ntpr=10,       
+  ntwx=25,      
+  ntwr=25,       
+  ntxo=2,       
+  ioutfm=1,
+  ifqnt=1,       
+  nmropt=1,
+ /
+ &qmmm
+  qmmask='@27426-27457,27609,27662,27663,27658,27622,27653,27623,27625,27624,27663,27694,27693,27691,27692,27690', 
+  qmcharge=0,
+  qm_theory='EXTERN',
+  qmcut=20,
+  qmshake=0,
+  qm_ewald=0,
+  writepdb=0, 
+ /
+&gau
+ method = 'M062X IOp(3/124=30)',
+ basis = 'Def2SVP',
+ num_threads = 24,
+ mem = '20GB',
+ executable = 'g16',
+/
+ &wt type='END' /
+DISANG=restr
+/

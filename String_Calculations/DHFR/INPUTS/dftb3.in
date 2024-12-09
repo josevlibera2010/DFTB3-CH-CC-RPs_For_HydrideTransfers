@@ -1,0 +1,35 @@
+300K constant temp QMMMMD
+ &cntrl
+  imin=0,
+  ntb=1,
+  cut=8.0,
+  ntc=1,
+  ntf=1,
+  tempi=300.0,
+  temp0=300.0,
+  ntt=3,
+  gamma_ln=1.0,
+  ig=XXXXX,         !The seed must be randomly set for each node
+  nstlim=500000,
+  dt=0.001,         !QM hydrogens' masses were set to 2.014 to use 1fs of timestep
+  iwrap=1,
+  ntpr=50,
+  ntwx=300,
+  ntwr=50,
+  ntxo=2,
+  ioutfm=1,
+  ifqnt=1,
+ /
+&qmmm
+  iqmatoms='@2538-2604',
+  qmcharge=1,
+  qm_theory='dftb3', 
+  dftb_telec=300.0, 
+  dftb_maxiter=1000,
+  dftb_slko_path='YYY/params/dat/slko/3ob-3-1',   !This variable points to the folder with DFTB3 parameters, YYY must be overwritten 
+  qmcut=8,
+  qmshake=0,
+  qm_ewald=1, 
+  qm_pme=1, 
+  writepdb=1, 
+ /

@@ -1,0 +1,30 @@
+6
+$COLVAR 
+COLVAR_type = "BOND"
+atoms = 27449 , 27447
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 27449 , 27625
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 27447 , 27625
+$END
+
+$COLVAR
+COLVAR_type = "BOND"
+atoms = 27451 , 27623
+$END
+
+$COLVAR
+COLVAR_type = "PPLANE"
+atoms = 27447, 27450, 27445, 27448
+$END
+
+$COLVAR
+COLVAR_type = "PPLANE"
+atoms = 27625, 27623, 27693, 27624
+$END

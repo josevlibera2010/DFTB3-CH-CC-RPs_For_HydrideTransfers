@@ -1,0 +1,7 @@
+$STRINGSETUP
+dir = "./results/"
+guess_file="guess"
+CV_file ="CVs"
+fix_ends=.true.
+remove_z_bias=.false.
+$END

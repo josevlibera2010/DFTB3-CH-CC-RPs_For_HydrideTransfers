@@ -1,0 +1,9 @@
+$STRINGSETUP
+dir = "results/"
+force_constant_d = 50
+preparation_steps = 0
+fix_ends = .true.
+remove_z_bias = .false.
+guess_file = "guess_dft"
+REX_period = 50
+$END
