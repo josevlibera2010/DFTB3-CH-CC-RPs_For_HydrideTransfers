@@ -11,7 +11,7 @@
   gamma_ln=1.0,
   ig=XXXXX,         !The seed must be randomly set for each node
   nstlim=500000,
-  dt=0.001,         !QM hydrogens' masses were set to 2.014 to use 1fs of timestep
+  dt=0.0005,        
   iwrap=1,
   ntpr=50,
   ntwx=300,
