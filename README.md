@@ -29,5 +29,17 @@ Contains all calculations related to the Dihydrofolate Reductase enzyme:
 - **DHFR_DFTB3_Original_parameters/**: Calculations using original DFTB3 parameters
 - **INPUTS/**: Input files for ASM calculations on DHFR hydride transfer reaction
 
+### Parametrization
+Contains the scripts and data used for DFTB3 parameter optimization:
+- **LIB/**: Library folder containing the python clases in utils.py module
+- **PARAM/**: Folder with DFTB3's original parameter files and for storing the modified parameters 
+- **RUNS/**: Calculation outputs using sqm program from AmberTools suite
+- **STRUCT/**: Ordered IRC trajectory in xyz format 
+- **AnalysisRepPot-DistDistrib-IRC.ipynb**: Jupyter notebook for analyzing repulsive potentials and distance distributions from IRC calculations
+- **FitHrm_CH_EXP1_deltaE.ipynb**: Jupyter notebook for fitting C-H using linear combinations of harmonic functions
+- **FitHrm_CH_CC_EXP1_deltaE.ipynb**: Jupyter notebook for fitting C-H and C-C RPs using linear combinations of harmonic functions
+- **PlotGaussAndHarmonics.ipynb**: Jupyter notebook for visualizing Gaussian and harmonic functions
+
+
 ## Citation
-If you use these parameters or data in your research, please cite our paper: [Paper citation to be added upon publication]
+If you use these parameters or data in your research, please cite our paper: (https://doi.org/10.26434/chemrxiv-2024-kkwwg-v2)
